@@ -1,4 +1,4 @@
-# iGRAIL v10 — Reproducible Experimental Framework
+# iGRAIL — Reproducible Experimental Framework
 
 ## iGRAIL: Blockchain-Orchestrated Generative Federated Learning for Privacy-Preserving Healthcare Analytics
 
@@ -24,7 +24,7 @@ The final manuscript results should be generated using the `paper` preset. The `
 
 ### FL
 
-FL uses standard sample-size weighted federated averaging.
+FL uses standard sample-size-weighted federated averaging.
 
 ### BC-FL
 

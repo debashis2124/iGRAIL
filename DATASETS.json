@@ -1,0 +1,34 @@
+{
+  "cancer": {
+    "shape": [
+      569,
+      33
+    ],
+    "target": "diagnosis",
+    "positive": "M"
+  },
+  "diabetes": {
+    "shape": [
+      100000,
+      9
+    ],
+    "target": "diabetes",
+    "positive": 1
+  },
+  "healthcare": {
+    "shape": [
+      100000,
+      16
+    ],
+    "target": "diabetes",
+    "positive": 1
+  },
+  "heart": {
+    "shape": [
+      920,
+      16
+    ],
+    "target": "num",
+    "positive": "num > 0"
+  }
+}

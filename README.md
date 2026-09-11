@@ -122,7 +122,7 @@ Install the dependencies:
 
     pip install -r requirements.txt
 
-The `requirements.txt` file should contain the dependencies required by `igrail_experiments_v10.py`.
+The `requirements.txt` file should contain the dependencies required by `igrail_experiments.py`.
 
 For reproducibility, the GitHub release used for the manuscript should preserve the exact package versions used for the final experiment. Do not replace them with newer versions without rerunning and validating the experiments.
 
@@ -140,7 +140,7 @@ After installing the dependencies, first perform a smoke test.
 
 Run:
 
-    python igrail_experiments_v10.py --preset smoke --datasets cancer diabetes healthcare heart
+    python igrail_experiments.py --preset smoke --datasets cancer diabetes healthcare heart
 
 The smoke preset is intended only to confirm that:
 
@@ -161,11 +161,11 @@ The smoke test is not the final experiment.
 
 After the smoke test completes successfully, run the full paper experiment:
 
-    python igrail_experiments_v10.py --preset paper --datasets cancer diabetes healthcare heart
+    python igrail_experiments.py --preset (add yiur requirement) --datasets cancer diabetes healthcare heart
 
 This is the main command for reproducing the final experimental results.
 
-The paper preset uses the complete experimental configuration implemented in `igrail_experiments_v10.py`.
+The paper preset uses the complete experimental configuration implemented in `igrail_experiments.py`.
 
 The final results should be taken only from this run.
 
@@ -483,11 +483,11 @@ Confirm that the required datasets are available under:
 
 Run the validation experiment:
 
-    python igrail_experiments_v10.py --preset smoke --datasets cancer diabetes healthcare heart
+    python igrail_experiments.py --preset smoke --datasets cancer diabetes healthcare heart
 
 If the validation completes successfully, run the final paper experiment:
 
-    python igrail_experiments_v10.py --preset paper --datasets cancer diabetes healthcare heart
+    python igrail_experiments.py --preset (chnage your requirement here) --datasets cancer diabetes healthcare heart
 
 The generated results can then be inspected under the `results` directory.
 
@@ -516,7 +516,7 @@ Before reproducing the paper, confirm the following:
 The clean public repository should contain at least:
 
     README.md
-    igrail_experiments_v10.py
+    igrail_experiments.py
     DATASETS.json
     requirements.txt
     data/
@@ -528,13 +528,9 @@ An optional environment snapshot can also be included:
 
     environment_freeze.txt
 
-Older experimental development files such as `igrail_experiments_v2.py`, `igrail_experiments_v3.py`, and other superseded versions are not required to reproduce the final v10 manuscript results.
-
----
-
 ## 20. Important Reproducibility Notes
 
-Use `igrail_experiments_v10.py` for the final reported experiments.
+Use `igrail_experiments.py` for the final reported experiments.
 
 Do not combine numerical results produced by older versions of the experiment code with v10 results.
 
@@ -552,24 +548,16 @@ For exact numerical verification, use the generated CSV files rather than estima
 
 ## 21. Citation
 
-If you use this implementation, experimental framework, or generated results in academic work, please cite the corresponding iGRAIL paper.
 
-Paper:
-
-**iGRAIL: Blockchain-Orchestrated Generative Federated Learning for Privacy-Preserving Healthcare Analytics**
-
-The complete bibliographic citation can be added here after publication.
 
 ---
 
 ## 22. License
 
-Add the selected software license before making the repository public.
 
-For example, if an open-source license is selected, place the corresponding `LICENSE` file in the root directory and state the license here.
 
 ---
 
 ## 23. Contact
 
-For questions about the implementation, experimental configuration, or reproduction of the reported results, please use the contact information provided in the corresponding paper or the GitHub repository.
+debashis.das@benedict.edu
